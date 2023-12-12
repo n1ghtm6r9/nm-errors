@@ -1,0 +1,30 @@
+{
+  "name": "@nmxjs/errors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "echo [@nmxjs/errors has no start script]",
+    "clear": "rm -rf dist",
+    "build": "yarn clear; tsc",
+    "test": "jest --config=jest.config.js --runInBand --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n1ghtm6r9/nm-validation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n1ghtm6r9/nm-validation/issues"
+  },
+  "homepage": "https://github.com/n1ghtm6r9/nm-validation#readme",
+  "dependencies": {
+    "@nestjs/microservices": "^10.2.10"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
