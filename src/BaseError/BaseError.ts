@@ -1,15 +1,15 @@
 import { RpcException } from '@nestjs/microservices';
-import { IBaseErrorOptions } from './interfaces';
 
 export abstract class BaseError extends RpcException {
   public static readonly code: string;
   public readonly code: string;
+  public readonly statusCode?: number;
 
-  constructor(options: IBaseErrorOptions) {
+  constructor(message: string) {
     super({
       status: 'error',
-      ...options,
+      message,
     });
-    this.code = options.code;
+    this.code = (<any>this.constructor).code;
   }
 }

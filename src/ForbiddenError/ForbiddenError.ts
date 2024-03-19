@@ -2,10 +2,9 @@ import { BaseError } from '../BaseError';
 
 export class ForbiddenError extends BaseError {
   public static readonly code = 'FORBIDDEN_ERROR';
+  public readonly statusCode = 403;
+
   constructor() {
-    super({
-      code: ForbiddenError.code,
-      message: 'Forbidden',
-    });
+    super('Forbidden');
   }
 }
