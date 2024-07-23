@@ -5,5 +5,6 @@ export * from './ForbiddenError';
 export * from './ValidationError';
 export * from './AlreadyExistError';
 export * from './UnauthorizedError';
+export * from './InvalidCredentialsError';
 export * from './InsufficientFundsError';
 export * from './ServiceNotAvailableError';
