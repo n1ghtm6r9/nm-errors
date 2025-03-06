@@ -1,6 +1,6 @@
 {
   "name": "@nmxjs/errors",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,10 +21,10 @@
     "url": "https://github.com/n1ghtm6r9/nm-validation/issues"
   },
   "homepage": "https://github.com/n1ghtm6r9/nm-validation#readme",
-  "dependencies": {
-    "@nestjs/microservices": "^10.2.10"
-  },
   "devDependencies": {
     "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "@nestjs/microservices": "^10.2.10"
   }
 }
